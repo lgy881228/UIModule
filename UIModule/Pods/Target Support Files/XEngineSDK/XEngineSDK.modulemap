@@ -1,0 +1,6 @@
+framework module XEngineSDK {
+  umbrella header "XEngineSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

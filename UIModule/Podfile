@@ -7,7 +7,9 @@ target 'UIModule' do
   pod 'LSRFramework'
   pod 'JSONModel'
   pod 'SSZipArchive'
+  pod 'XEngineSDK'
   pod 'AFNetworking'
+
   # Pods for UIModule
   pod 'UIModule', :path =>'../'
 end
