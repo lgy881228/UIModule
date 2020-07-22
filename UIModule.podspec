@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
 
     s.name         = "UIModule"
-    s.version      = "1.0.3"
+    s.version      = "1.0.5"
     s.summary      = "测试模块打包和方法调用"
 
      s.description  = <<-DESC
@@ -34,8 +34,8 @@ Pod::Spec.new do |s|
   :tag => s.version.to_s }
 
 
-    s.source_files  = "XEngineSDK/**/*.{h,m}","XEngineSDK/*.h"
-    s.public_header_files = "XEngineSDK/**/*.h","XEngineSDK/*.h"
+    s.source_files  = "XEngineSDK/**/*.{h,m}"
+    s.public_header_files = "XEngineSDK/**/*.h"
    
     s.frameworks  = "SystemConfiguration","WebKit","LSRFramework","SSZipArchive","JSONModel","AFNetworking"
 
