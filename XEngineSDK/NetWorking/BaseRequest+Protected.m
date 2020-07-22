@@ -90,21 +90,21 @@
     }];
 }
 
-//// 上传数据
-//+ (NSURLSessionDataTask *)post:(NSString *)keyword params:(NSDictionary *)params formDataParams:(NSDictionary *)formDataParams dataModel:(Class)jsonModel success:(TTSuccessBlock)successBlock failure:(TTFailureBlock)failureBlock
-//{
-//    NSString *uri = [self urlStringToKeyword:keyword];
-//    [self customizeRequestParams:&params];
-//
-//    return [self post:uri params:params formDataParams:formDataParams success:^(NSDictionary *responseHeaderFields, id responseData) {
-//
-//        [self handleResponseHeader:responseHeaderFields resesponseData:responseData withSuccessBlock:successBlock dataModel:jsonModel failure:failureBlock];
-//
-//    } failure:^(NSError *error) {
-//
-//        [self handleError:error withFailureBlock:failureBlock];
-//    }];
-//}
+// 上传数据
++ (NSURLSessionDataTask *)post:(NSString *)keyword params:(NSDictionary *)params formDataParams:(NSDictionary *)formDataParams dataModel:(Class)jsonModel success:(TTSuccessBlock)successBlock failure:(TTFailureBlock)failureBlock
+{
+    NSString *uri = [self urlStringToKeyword:keyword];
+    [self customizeRequestParams:&params];
+
+    return [self post:uri params:params formDataParams:formDataParams success:^(NSDictionary *responseHeaderFields, id responseData) {
+
+        [self handleResponseHeader:responseHeaderFields resesponseData:responseData withSuccessBlock:successBlock dataModel:jsonModel failure:failureBlock];
+
+    } failure:^(NSError *error) {
+
+        [self handleError:error withFailureBlock:failureBlock];
+    }];
+}
 
 #pragma mark - Response
 + (void)handleSuccessData:(NSDictionary *)jsonData code:(NSUInteger)code message:(NSString *)message withSuccessBlock:(TTSuccessBlock)successBlock dataModel:(Class)jsonModel

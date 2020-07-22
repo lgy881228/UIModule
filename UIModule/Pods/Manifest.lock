@@ -21,12 +21,18 @@ PODS:
   - Masonry (1.1.0)
   - MBProgressHUD (1.2.0)
   - SSZipArchive (2.2.3)
+  - UIModule (1.0.9):
+    - AFNetworking
+    - JSONModel
+    - LSRFramework (~> 1.1.1)
+    - SSZipArchive
 
 DEPENDENCIES:
   - AFNetworking
   - JSONModel
   - LSRFramework
   - SSZipArchive
+  - UIModule (from `../`)
 
 SPEC REPOS:
   trunk:
@@ -37,6 +43,10 @@ SPEC REPOS:
     - MBProgressHUD
     - SSZipArchive
 
+EXTERNAL SOURCES:
+  UIModule:
+    :path: "../"
+
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
@@ -44,7 +54,8 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   SSZipArchive: 62d4947b08730e4cda640473b0066d209ff033c9
+  UIModule: 2c102ac344edd1de6bcb8ba56a6ab52fd5b48dc5
 
-PODFILE CHECKSUM: 243757ba7c31bae7150dd2c27df068821468d8e1
+PODFILE CHECKSUM: f906563f673fc13a4f22ec3fdfe14173fd1e9501
 
 COCOAPODS: 1.9.3

@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
 
     s.name         = "UIModule"
-    s.version      = "1.0.8"
+    s.version      = "1.0.9"
     s.summary      = "测试模块打包和方法调用"
 
      s.description  = <<-DESC
@@ -37,7 +37,7 @@ Pod::Spec.new do |s|
     s.source_files  = "XEngineSDK/**/*.{h,m}"
     s.public_header_files = "XEngineSDK/**/*.h"
    
-    #s.frameworks  = "SystemConfiguration","WebKit","LSRFramework","SSZipArchive","JSONModel","AFNetworking"
+    s.frameworks  = "CoreServices"
 
     s.pod_target_xcconfig = {'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'}
     s.dependency 'AFNetworking'

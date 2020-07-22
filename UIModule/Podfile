@@ -9,5 +9,5 @@ target 'UIModule' do
   pod 'SSZipArchive'
   pod 'AFNetworking'
   # Pods for UIModule
-
+  pod 'UIModule', :path =>'../'
 end
