@@ -11,7 +11,7 @@
 
 #import "dsbridge.h"
 #import "AFNetworking.h"
-#import "LSRFramework.h"
+#import <LSRFramework/LSRFramework.h>
 #import "XEngineSDK.h"
 #import "PublicData.h"
 #import "PublicData+Update.h"
