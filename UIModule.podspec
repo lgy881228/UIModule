@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
 
     s.name         = "UIModule"
-    s.version      = "1.0.6"
+    s.version      = "1.0.8"
     s.summary      = "测试模块打包和方法调用"
 
      s.description  = <<-DESC

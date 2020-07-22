@@ -10,7 +10,7 @@
 #define XEngine_h
 
 #import "dsbridge.h"
-#import "AFNetworking.h"
+#import <AFNetworking/AFNetworking.h>
 #import <LSRFramework/LSRFramework.h>
 #import "XEngineSDK.h"
 #import "PublicData.h"
