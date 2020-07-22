@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
 
     s.name         = "UIModule"
-    s.version      = "1.0.0"
+    s.version      = "1.0.1"
     s.summary      = "测试模块打包和方法调用"
 
      s.description  = <<-DESC
@@ -37,7 +37,7 @@ Pod::Spec.new do |s|
     s.source_files  = "UIModuleClass/*.{h,m}"
     s.public_header_files = "UIModuleClass/*.h"
    
-    #s.frameworks  = "CoreServices"
+    s.frameworks  = "UIKit"
 
     s.pod_target_xcconfig = {'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'}
     s.dependency 'XEngineSDK'

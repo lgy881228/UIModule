@@ -6,7 +6,7 @@
 //  Copyright © 2020 edz. All rights reserved.
 //
 
-#import "xengine__module_BaseModule.h"
+#import <XEngineSDK/xengine__module_BaseModule.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
