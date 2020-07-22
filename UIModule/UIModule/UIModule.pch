@@ -1,0 +1,15 @@
+//
+//  UIModule.pch
+//  UIModule
+//
+//  Created by edz on 2020/7/21.
+//  Copyright © 2020 edz. All rights reserved.
+//
+
+#ifndef UIModule_pch
+#define UIModule_pch
+//#import "XEngine.h"
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* UIModule_pch */
