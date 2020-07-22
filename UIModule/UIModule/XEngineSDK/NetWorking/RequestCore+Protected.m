@@ -13,15 +13,15 @@
 #import <CoreServices/UTType.h>
 #define kTimeoutTimeinterval 20.0
 
-static inline NSString * FileContentTypeForPathExtension(NSString *extension) {
-    NSString *UTI = (__bridge_transfer NSString *)UTTypeCreatePreferredIdentifierForTag(kUTTagClassFilenameExtension, (__bridge CFStringRef)extension, NULL);
-    NSString *contentType = (__bridge_transfer NSString *)UTTypeCopyPreferredTagWithClass((__bridge CFStringRef)UTI, kUTTagClassMIMEType);
-    if (!contentType) {
-        return @"application/octet-stream";
-    } else {
-        return contentType;
-    }
-}
+//static inline NSString * FileContentTypeForPathExtension(NSString *extension) {
+//    NSString *UTI = (__bridge_transfer NSString *)UTTypeCreatePreferredIdentifierForTag(kUTTagClassFilenameExtension, (__bridge CFStringRef)extension, NULL);
+//    NSString *contentType = (__bridge_transfer NSString *)UTTypeCopyPreferredTagWithClass((__bridge CFStringRef)UTI, kUTTagClassMIMEType);
+//    if (!contentType) {
+//        return @"application/octet-stream";
+//    } else {
+//        return contentType;
+//    }
+//}
 
 @implementation RequestCore (Protected)
 
